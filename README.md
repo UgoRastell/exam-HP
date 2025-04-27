@@ -73,7 +73,7 @@ Les logs des clients nous donnent une idée de la latence. Voici un exemple avec
 **Interprétation**
 
 * **gRPC** : Dans cette simulation, gRPC a démontré une performance très stable en termes de latence.
-* **WebSocket** : La dégradation des performances observée pour WebSocket dans ces logs est notable. Malgres que WebSocket soit généralement performant, cette augmentation de latence suggère un possible problème dans l'implémentation (peut etres la faute du developeur ¯\_(ツ)_/¯ ).
+* **WebSocket** : La dégradation des performances pour le WebSocket dans ces logs. Malgres que WebSocket soit généralement performant, cette augmentation de latence montre un possible problème dans l'implémentation (peut etres la faute du developeur ¯\_(ツ)_/¯ ).
 
 ## Quand utiliser quoi ?
 
@@ -91,7 +91,7 @@ Les logs des clients nous donnent une idée de la latence. Voici un exemple avec
 
 ## Conclusion
 
-* **gRPC** s'est montré très stable et performant pour le streaming de données dans ce projet de test, idéal pour les communications backend.
-* **WebSocket**, bien que parfait pour l'interactivité web, a montré des signes de dégradation de performance dans cette implémentation spécifique, soulignant l'importance des tests et de l'optimisation selon le cas d'usage.
+* **gRPC** s'est montré très stable et performant pour le streaming de données dans ce projet de test.
+* **WebSocket**, parfait pour l'interactivité web, le websocket a montré des signes de dégradation de performance, soulignant l'importance des tests et de l'optimisation.
 
 Le choix de la technologie dépendra toujours du contexte spécifique du projet, des besoins en performance et de la facilité d'intégration souhaitée.
