@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  grpc-server:
+    build: ./grpc-server
+    ports:
+      - "50051:50051"
+
+  websocket-server:
+    build: ./websocket-server
+    ports:
+      - "8080:8080"
+
+  pokemon-client-grpc:
+    build: ./pokemon-client-grpc
+    depends_on:
+      - grpc-server
+
+  pokemon-client-websocket:
+    build: ./pokemon-client-websocket
+    depends_on:
+      - websocket-server
